@@ -1,19 +1,20 @@
-const para = document.querySelector('p')
-const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz"
-const text = para.innerText
+const p = document.querySelector('p')
+const text = p.innerText
 
-para.addEventListener("mouseenter", () =>{
-    
-    setInterval( () =>{
+const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklnopqrstuvwxyz"
 
-    const str = text.split('').map((char, index) =>{
-        return characters.split("") [Math.floor(Math.random() * 53)]  
+let iteration = 0
+
+function randomText(){
+    const str = text.split("").map((char, index) =>{
+        if(index < iteration){
+            return char
+        }
+        return characters.split("")[Math.floor(Math.random() * 53)]
     }).join("")
-    
+    p.innerText = str
 
-    para.innerText = str
+    iteration += 0.2
+}
 
-        }, 100)
-
-})
-
+setInterval(randomText, 30)
