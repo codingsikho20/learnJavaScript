@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 300px;
+    width: 400px;
+    animation: changeBG 10s;
+    background-color: var(--bgColor);
+}
+
+@keyframes changeBG{
+    from{
+        --bgColor: red;
+        /* background-color: antiquewhite;
+        border-radius: 0px;
+        transform: translateX(0px)scale(1); */
+    }
+
+    to{
+        --bgColor: yellow;
+        /* background-color: coral;
+        border-radius: 30px;
+        transform: translateX(50px) scale(0.45); */
+    }
+}
+
+@property --bgColor{
+    syntax: "<color>";
+    initial-value: blue;
+    inherits: false;
+}
