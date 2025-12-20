@@ -115,31 +115,31 @@
 
 // let make blueprint of books
 
-class Kitaab{
-    constructor(name, author, price, color){
-        this.name = name;
-        this.author = author;
-        this.price = price;
-        this.color = color;
-    }
+// class Kitaab{
+//     constructor(name, author, price, color){
+//         this.name = name;
+//         this.author = author;
+//         this.price = price;
+//         this.color = color;
+//     }
 
-    panaPalato(){
-        console.log("logo ko hindi me science ki kitaab padhana acha nahi lagta hai");
+//     panaPalato(){
+//         console.log("logo ko hindi me science ki kitaab padhana acha nahi lagta hai");
         
-    }
+//     }
 
-    bookmarkLagao(){
-        console.log("hum hindi medium me padne wale logo ko n bookmark lagane me koi interest nahi hota hai");
+//     bookmarkLagao(){
+//         console.log("hum hindi medium me padne wale logo ko n bookmark lagane me koi interest nahi hota hai");
         
-    }
+//     }
 
-    padhlo(){
-        console.log("20 pana padh liya ab rest karna hai");
+//     padhlo(){
+//         console.log("20 pana padh liya ab rest karna hai");
         
-    }
+//     }
 
-}
+// }
 
-let k1 = new Kitaab("hindi", "Mr.Manish", "300NRI", "blue");
-let k2 = new Kitaab("math", "Mr.Kishan", "403NRI", "green");
-let k3 = new Kitaab("history", "Mr.Yashawant", "90NRI", "red");
+// let k1 = new Kitaab("hindi", "Mr.Manish", "300NRI", "blue");
+// let k2 = new Kitaab("math", "Mr.Kishan", "403NRI", "green");
+// let k3 = new Kitaab("history", "Mr.Yashawant", "90NRI", "red");
