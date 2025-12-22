@@ -107,3 +107,4 @@
 // apply-> wahi karta hai jo call karta hai and argument me pahali value 
 
 // bind -> wahi karta hai jo call karta hai 
+
